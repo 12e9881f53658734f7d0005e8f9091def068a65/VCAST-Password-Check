@@ -35,5 +35,4 @@ def sendPasswordCheckRequest(boardIP, passwordToCheck):
     else:
         return False
 
-# Create threads and run throught password list.
 print(sendPasswordCheckRequest("172.28.67.113", "passwordOmG"))
