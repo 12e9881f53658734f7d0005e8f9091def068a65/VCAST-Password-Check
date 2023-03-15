@@ -5,7 +5,7 @@ def preparePassword(password):
     return f"CHECKPASSWORD\r\n{password}\r\n\r\n"
 
 def sendPasswordCheckRequest(boardIP, passwordToCheck):
-    sp = randint(1024,65535)
+    sp = randint(1024, 65535)
     ip = IP(dst=boardIP)
 
     syn = TCP(sport=sp, dport=8121, flags="S", seq=randint(9999, 99999))
